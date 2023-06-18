@@ -146,6 +146,7 @@ p {
     @media screen and (max-width: 768px) {
       .photo-library {
         padding-top: 20%; /* Ajuste a proporção para a altura desejada em telas menores */
+        width: 55%;
       }
     }
     
