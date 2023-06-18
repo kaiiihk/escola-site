@@ -1,0 +1,170 @@
+/* Adicionei algumas cores personalizadas para o site */
+:root {
+  --cor-primaria: #00AB99;
+  --cor-t: #0a0a0a;
+  --cor-secundaria: #e74c3c;
+  --cor-texto: #black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: var(--cor-texto);
+}
+
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-pusher {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-primaria);
+  padding: 10px;
+  border-bottom: 3px solid #000;
+}
+
+.header__logo img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+
+.site-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0;
+  background-image: url('caminho/para/sua/imagem-fantasia.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+
+#TITU3 {
+  margin-top: 40px;
+  font-size: 35px;
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+p {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.meio {
+  margin-bottom: 40px;
+  
+}
+
+#titulodire {
+  margin-top: 40px;
+  font-size: 30px;
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+#fundoes {
+  /*fundo do texto*/
+  margin-top: 0;
+  background-image: url("https://pr0.nicelocal.br.com/7waKcLZymTVBWKi14H2R0g/637x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2ZJIX_7GmsdelMbhu7zOHRJMDsWNT4OU4SlrPTeoqkkkSGjgVzvaVhdEy3bKQVbQ8Q");
+  background-repeat: no-repeat;
+  padding: 50px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  background-position: 50% 40%;
+ 
+  /*TEXTO*/
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  text-align: center;
+  font-size: 60px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    .photo-library {
+      position: relative;
+      padding-top: 15%;
+      width: 55%;
+      margin: 3px auto 20px auto;
+      overflow: hidden;
+      border: 1px solid #000;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .photo-library img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .photo-library .active {
+      opacity: 1;
+    }
+    
+    /* layout em telas menores */
+    @media screen and (max-width: 768px) {
+      .photo-library {
+        padding-top: 10%; /* Ajuste a proporção para a altura desejada em telas menores */
+      }
+    }
+    
+html {
+  scroll-behavior: smooth;
+}
+sobre {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+fotos {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
